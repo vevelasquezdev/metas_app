@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+
+@layer components {
+
+    
+
+    .encabezado {
+        @apply h-12 flex justify-between shadow bg-white text-gray-700 relative font-semibold uppercase;
+    }
+
+    .pie {
+        @apply shadow bg-gradient-to-r from-pink-500 to-purple-500 relative h-6 flex items-center justify-center text-xs pr-2 text-white;
+    }
+
+    .principal {
+        @apply flex min-h-[calc(100vh-72px)] bg-gradient-to-l from-gray-300 via-gray-100 to-gray-100
+    }
+
+    .aside {
+        @apply flex flex-col text-gray-700 bg-gray-100 shadow w-60 min-h-full text-center
+    }
+
+    .main {
+        @apply p-0 w-full min-h-full overflow-auto
+    }
+
+
+
+
+
+}

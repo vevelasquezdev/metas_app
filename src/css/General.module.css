@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+
+
+@layer utilities {
+	.meta {
+        @apply justify-between m-4 overflow-hidden
+    }
+
+	.boton {
+		@apply inline-flex items-center justify-center h-10 px-5 text-sm font-semibold rounded-full cursor-pointer transition-all duration-200 ease-in-out;
+	}
+
+	.boton_negro {
+		@apply text-white bg-gray-700 hover:bg-gray-600 active:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-500;
+	}
+
+	.boton_rojo {
+		@apply text-white bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-red-400;
+	}
+
+	.boton_gris {
+		@apply text-gray-700 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-300;
+	}
+
+	.label {
+		@apply block uppercase text-xs font-bold mb-4 pb-2 text-gray-700
+	}
+
+	.input {
+		 @apply w-full h-8 p-2 font-semibold bg-gray-100 mt-1
+			text-gray-500 hover:text-gray-600 
+			rounded-lg border border-gray-300 
+			focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-300 
+			transition-all duration-200 ease-in-out;
+	}
+
+	
+	
+
+}

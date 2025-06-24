@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer components {
+    .vinculo {
+        @apply flex items-center px-4 h-12 hover:bg-gray-200 gap-2
+    }
+
+    .icono {
+        @apply h-6 w-6 flex-shrink-0
+    }
+    .texto{
+        @apply text-sm font-semibold text-gray-700
+    }
+}

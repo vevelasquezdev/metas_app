@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+    .meta {
+        @apply flex p-2 justify-between m-4
+    }
+
+    .icono {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: inset 0.2rem 0.2rem 0.4rem #a3b1c6,
+            inset 0.2rem 0.2rem 0.4rem #ffffff;
+        @apply h-10 w-10 rounded-full flex items-center justify-center text-2xl ml-2
+    }
+
+    .barra1 {
+        @apply h-1 w-28 rounded bg-gray-200
+    }
+
+    .barra2 {
+        @apply h-1 w-28 rounded bg-gradient-to-l from-green-300 to-blue-700
+    }
+
+    .neu {
+		border-radius: 0.5rem;
+		background: #ffffff;
+		box-shadow:
+			0.2rem 0.2rem 0.4rem #a3b1c6,
+			-0.2rem -0.2rem 0.4rem #ffffff;
+	}
+
+}
