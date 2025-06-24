@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "detalles": "Correr por 1 hr",
+        "periodo": "dia",
+        "eventos": "1",
+        "icono": "🏃‍♂️",
+        "meta": 365,
+        "plazo": "2030-01-01",
+        "completado": "25"
+    },
+    {
+        "id": "2",
+        "detalles": "Leer Libros",
+        "periodo": "año",
+        "eventos": "1",
+        "icono": "📚",
+        "meta": 365,
+        "plazo": "2030-01-01",
+        "completado": "150"
+    },
+    {
+        "id": "3",
+        "detalles": "Viajar a Centros turisticos",
+        "periodo": "mes",
+        "eventos": "1",
+        "icono": "✈️",
+        "meta": 365,
+        "plazo": "2030-01-01",
+        "completado": "300"
+    },
+    {
+        "id": "4",
+        "detalles": "Crear App",
+        "eventos": 1,
+        "periodo": "mes",
+        "icono": "💻",
+        "meta": "3",
+        "plazo": "2030-01-01",
+        "completado": "1"
+    }
+]

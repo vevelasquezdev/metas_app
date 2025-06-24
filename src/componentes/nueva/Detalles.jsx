@@ -3,7 +3,8 @@ import estilos from '../../css/Detalles.module.css'
 import gralcss from '../../css/General.module.css'
 import { Contexto } from '../servicios/Memoria';
 import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
+import {pedirMetas,crearMeta,actualizarMeta,borrarMeta} from '../servicios/Pedidos.jsx'
 
 
 const opc_frec = ["dia", "semana", "mes", "año"];
@@ -30,21 +31,21 @@ const Detalles = () => {
     const onChange = (event, prop) => {
         setForm(estado => ({ ...estado, [prop]: event.target.value }));
     }
-    useEffect(() => {
-        const metaMemoria = estado.objetos[id];
-        if (!id) {
-            return;
-        }
+    const redireccionar = useNavigate();
 
+    useEffect(() => {
+        const metaMemoria = estado.objetos[id];        
+        if (!id) return;
         if (!metaMemoria) {
             return redireccionar('/lista');
         }
         setForm(metaMemoria);
     }, [id]);
 
-    const redireccionar = useNavigate();
-    const crear = () => {
-        enviar({ tipo: 'crear', meta: form })
+    
+    const crear = async () => {
+        const nuevaMeta = await crearMeta();
+        enviar({ tipo: 'crear', meta: nuevaMeta })
         redireccionar('/lista');
     }
 
@@ -52,13 +53,15 @@ const Detalles = () => {
         redireccionar('/lista');
     }
 
-    const actualizar = () => {
-        enviar({ tipo: 'actualizar', meta: form })
+    const actualizar = async () => {
+        const metaActualizada = await actualizarMeta();
+        enviar({ tipo: 'actualizar', meta: metaActualizada })
         redireccionar('/lista');
     }
 
-    const borrar = () => {
-        enviar({ tipo: 'borrar', id})
+    const borrar = async () => {
+        const id_borrar = await borrarMeta();
+        enviar({ tipo: 'borrar', id:id_borrar})
         redireccionar('/lista');
     }
 
