@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Detalles from './nueva/Detalles';
 
 const Modal = ({ children }) => {

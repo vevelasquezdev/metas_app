@@ -1,3 +1,4 @@
+import React from 'react';
 import estilos from '../css/Vinculo.module.css'
 
 export function ListaIcono() {

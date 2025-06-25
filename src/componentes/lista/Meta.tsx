@@ -3,8 +3,17 @@ import estilos from '../../css/Meta.module.css'
 import gralcss from '../../css/General.module.css'
 import { Link } from 'react-router-dom'
 
+interface MetaProps{
+    id: number; 
+    icono: string;
+    eventos: number;
+    periodo: number;
+    detalles: string;
+    meta: number; 
+    completado: number;
+}
 
-const Meta = ({id, icono,eventos,periodo,detalles, meta, completado}) => {
+const Meta = ({id, icono,eventos,periodo,detalles, meta, completado}: MetaProps) => {
     // const {icono,eventos,periodo,detalles, meta, completado} = metaMock;
   return (
     <Link to={`/lista/${id}`} className={estilos.meta + " neu"}>

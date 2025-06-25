@@ -1,3 +1,4 @@
+import React from 'react';
 import estilos from '../css/Principal.module.css'
 function Pie() {
     return (

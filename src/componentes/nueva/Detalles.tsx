@@ -4,7 +4,7 @@ import gralcss from '../../css/General.module.css'
 import { Contexto } from '../servicios/Memoria';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import {crearMeta,actualizarMeta,borrarMeta} from '../servicios/Pedidos.jsx'
+import {crearMeta,actualizarMeta,borrarMeta} from '../servicios/Pedidos.js'
 
 
 const opc_frec = ["dia", "semana", "mes", "año"];

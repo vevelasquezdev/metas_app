@@ -1,6 +1,8 @@
-import Vinculo from "./Vinculo"
-import estilos from '../css/Principal.module.css'
-import {ListaIcono, NuevaMetaIcono } from './Icono'
+
+import React from 'react';
+import Vinculo from "./Vinculo";
+import estilos from '../css/Principal.module.css';
+import {ListaIcono, NuevaMetaIcono } from './Icono';
 function Principal({ children }) {
     return (
         <div className={estilos.principal}>

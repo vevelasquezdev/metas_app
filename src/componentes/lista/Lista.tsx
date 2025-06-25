@@ -15,7 +15,7 @@ function Lista() {
 			))}
 			<Outlet />
 		</>
-	)
+	);
 }
 
 export default Lista
