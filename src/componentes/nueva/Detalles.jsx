@@ -40,7 +40,7 @@ const Detalles = () => {
             return redireccionar('/lista');
         }
         setForm(metaMemoria);
-    }, [id]);
+    }, [id, estado.objetos, redireccionar]);
 
     
     const crear = async () => {
